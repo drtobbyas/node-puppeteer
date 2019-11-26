@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="http://localhost:3000/view/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">ADMIN DASHBOARD</h1>
+                <hr class="my-2">
+                <p>Easily convert booking code from one betting platform to another</p>
+            </div>
+
+        </div>
+        
+        <div class="row">
+            
+        
+
+        <div class="form-group col-xs-4">
+          <select class="form-control" id="srcBookMaker">
+              <option value="bet9ja">Bet9ja</option>
+              <option value="burebet247">SureBet247</option>
+              <option value="betking">BetKing</option>
+              <option value="nairabet">NairaBet</option>
+          </select>
+         
+        </div>
+         <input type="text" id="srcBooking">
+
+</div>
+<div class="row">
+    
+
+        <div class="form-group col-xs-4">
+          <select class="form-control" id="dstBookMaker">
+              <option value="betking">BetKing</option>
+              <option value="accessbet">AccessBet</option>
+              <option value="nairabet">NairaBet</option>
+              <option value="bet9ja">Bet9ja</option>
+          </select>
+          
+        </div>
+        <input type="text" id="dstBooking">
+ </div>       
+        <div class="form-group">
+          <button class="btn btn-success" id="submit" type="submit">Convert</button>
+        </div>
+
+        
+    </div>
+    <script src="http://localhost:3000/view/script/start.js"></script>
+</body>
+</html>
